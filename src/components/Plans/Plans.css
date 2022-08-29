@@ -13,6 +13,18 @@
     justify-content: center;
     gap: 3rem;
 }
+.plans-blur-1{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+}
+.plans-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+}
 .plan{
     display: flex;
     flex-direction: column;
@@ -61,4 +73,13 @@
 }
 .plans>:nth-child(2)>button{
     color: orange;
+}
+
+@media screen and (max-width: 768px){
+    .plans{
+        flex-direction: column;
+    }
+    .plans> :nth-child(2){
+        transform: none;
+    }
 }
